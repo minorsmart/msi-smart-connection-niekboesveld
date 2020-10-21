@@ -52,25 +52,52 @@
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3">Welkom!
-        <img src="images/foto.jpg" alt="Voorbeeld CSS plaatje floaten" title="Rechts naast de tekst" class="right"> 
-      </h1>
-      <p>Op deze website kunt u mijn portfolio bekijken. In het portfolio staan alle opdrachten die ik tijdens de minor Smart Industry heb gemaakt.</p> 
-         
-    </div>
+    <div class="container1">
+      <h1 class="display-3"></h1>
+         </div>
   </div>
 
-  <div class="container">
-    <!-- Example row of columns -->
-    <H1>Wie ben ik?</H1>
-      <p>Ik ben Niek Boesveld. Ik ben 22 jaar oud en ik kom uit Doetinchem. Voor het 4de jaar van de opleiding Finance and Control volg ik de minor Smart Industry.</p>
-    
+  <div id="weather">
+    <div id="description"></div>
+    <h1 id="temp"></h1>
+    <div id="location"></div>
+  </div>
+  <script lang="text/javascript">
+    // future javascript
+    function weatherBallon( cityID ) {
+  var key = 'e0d329a327abc0714e63ac73a61d378e';
+  fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
+  .then(function(resp) { return resp.json() }) // Convert data to json
+  .then(function(data) {
+    console.log(data);
+    drawWeather(data);
+  })
+  .catch(function() {
+    // catch any errors
+  });
+}
 
-   
-
-  </div> <!-- /container -->
-
+window.onload = function() {
+  weatherBallon( 2756767 );
+}
+function drawWeather( d ) {
+	var celcius = Math.round(parseFloat(d.main.temp)-273.15);
+	var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
+	var description = d.weather[0].description;
+	
+	document.getElementById('description').innerHTML = description;
+	document.getElementById('temp').innerHTML = celcius + '&deg;';
+	document.getElementById('location').innerHTML = d.name;
+	
+	if( description.indexOf('rain') > 0 ) {
+  	document.body.className = 'rainy';
+  } else if( description.indexOf('cloud') > 0 ) {
+  	document.body.className = 'cloudy';
+  } else if( description.indexOf('sunny') > 0 ) {
+  	document.body.className = 'sunny';
+  }
+}
+  </script>
 </main>
 
 <footer class="container">
