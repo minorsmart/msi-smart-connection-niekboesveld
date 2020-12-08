@@ -54,19 +54,7 @@ body.rainy {
   font-weight: bold;
   }
 
-  .carousel-item {
-    height:32rem;
-    Background: #777;
-    color: white;
-    position: relative;
-    }
-  .carousel-container {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding-bottom: 50px
-      }
+
 
 
 
