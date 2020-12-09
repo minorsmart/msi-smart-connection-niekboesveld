@@ -58,6 +58,17 @@ body.rainy {
     color: #0000;
   }
 
+.tekstdeco{
+  text-decoration: none;
+  color: #FFFF;
+  }
+
+.tekstdeco:hover{
+    text-decoration: none;
+    color: #FFFF;
+    }
+
+
 
 
 
