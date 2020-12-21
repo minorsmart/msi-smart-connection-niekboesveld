@@ -68,6 +68,36 @@ body.rainy {
     color: #FFFF;
     }
 
+.col-md-3:hover{
+   background-color: #E9ECEF;
+     }
+
+
+.footer{
+  padding: 15px 0;
+  text-align: center;
+}
+
+.tekstdeco2{
+  border: black;
+  text-decoration: none;
+  color: #000;
+  }
+.tekstdeco2:hover{
+  background: gray;
+  text-decoration: none;
+  color: #000;
+    }
+
+.col-md-3{
+  grid-gap: 20px 50px;
+  border-style: solid;
+}
+.row{
+  text-align: center;
+  border-radius: 15px;
+  grid-gap: 20px 20px;
+}
 
 
 
