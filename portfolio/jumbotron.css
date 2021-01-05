@@ -74,8 +74,9 @@ body.rainy {
 
 
 .footer{
-  padding: 15px 0;
-  text-align: center;
+  clear: both;
+  position: relative;
+
 }
 
 .tekstdeco2{
@@ -109,9 +110,17 @@ body.rainy {
 
 
 .previous {
-  background-color: #E9ECEF;
-  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #343A40;
+  color: white;
 }
+.previous:hover{
+  background: white;
+  text-decoration: none;
+  color: #000;
+    }
 
 
 
