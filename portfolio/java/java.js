@@ -468,3 +468,13 @@ const Dropdown = (($) => {
 })($, Popper)
 
 export default Dropdown
+
+
+
+
+    
+
+function goBack() {
+  window.history.back();
+}
+
