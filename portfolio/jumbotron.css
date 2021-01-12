@@ -191,5 +191,8 @@ img.right {
 
     }
 
+    #fixedbutton {
+      position: fixed;
+  }
 
     
