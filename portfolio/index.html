@@ -131,10 +131,41 @@
 </main>
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/niekvoor.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/visvoor.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/voetbalvoor.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+      
+      </div>
     <div class="container">
       <h1 class="display-3">Welkom!
       </h1>
-      <p></p> 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </div>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
       </div>
   </div>
   <div class="container">
@@ -156,6 +187,28 @@
 
 
   </div> 
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
 <footer class="footer">
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
     © 2021 Copyright: Niek Boesveld
