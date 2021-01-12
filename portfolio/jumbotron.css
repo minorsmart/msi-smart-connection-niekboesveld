@@ -185,13 +185,11 @@ img.right {
       box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
     }
 
-    .container img{
+  .personpr img{
 
         float: right;
 
     }
-    navbar{
-      background:royalblue;
-    }
+
 
     
