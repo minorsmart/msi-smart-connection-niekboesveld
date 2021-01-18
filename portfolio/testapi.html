@@ -59,46 +59,26 @@
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
-    <input action="action" type="button" value="Terug" id="fixedbutton"onclick="window.history.go(-1); return false;" />
+    <input action="action" type="button" value="Terug" id="fixedbutton" onclick="window.history.go(-1); return false;" />
     <div class="container">
-      <h1 class="display-3">Smart Connection! 
-        <img src="images/smartconnectie.jpg" alt="Voorbeeld CSS plaatje floaten" title="Rechts naast de tekst" class="right"> </h1>
-        <p> Op deze pagina vindt u de opdrachten die ik voor de topic Smart Connection heb gemaakt. </p>
-        <br>
-        <br>
-        
+      <h1 class="display-3">Week 1 Smart Start </h1>
+      <p> Onderzoek naar overeenkomsten tussen opleiding en minor. Voor deze opdracht heb ik onderzocht wat de overeenkomsten zijn tussen de minor Smart Industry en mijn opleiding Finance and Control.</p>
+      <p>
     </div>
   </div>
 
   <div class="container">
-    <!-- Example row of columns -->
+    <div id="googleMap" style="width:100%;height:400px;"></div>
 
-    <div class="row">
-      <div class="col-md-3"> <a class="tekstdeco2" href="mijnwebsite.html"> 
-        <h2>Mijn Website</h2>
-        <p>In dit hoofdstuk bespreek ik hoe het was om voor het eerst een website te maken. </p>
-      </div></a>
-      <div class="col-md-3"> <a class="tekstdeco2" href="weerapp.html"> 
-        <h2>Weer app</h2>
-        <p>Door middel van een API wordt het weer van Doetinchem op dit moment weergegeven op deze pagina.</p>
-      </div></a>
-      <div class="col-md-3"> <a class="tekstdeco2" href="corona.html"> 
-        <h2>Covid-19</h2>
-        <p>Door middel van een API worden de actuele corona cijfers weergegeven op deze pagina.</p>
-      </div></a>
-      <div class="col-md-3"> <a class="tekstdeco2" href="testapi.html"> 
-        <h2>Goolge maps api</h2>
-        <p>Door middel van Teachable Machine heb ik een mini AI machine gemaakt. Probeer hem uit!</p>
-      </div></a>
-      <div class="col-md-3"> <a class="tekstdeco2" href="aiaplicatie.html"> 
-        <h2>AI Machine</h2>
-        <p>Door middel van Teachable Machine heb ik een mini AI machine gemaakt. Probeer hem uit!</p>
-      </div></a>
-      
-    </div>
-
-    <hr>
-
+    <script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
   </div> <!-- /container -->
 
 </main>
@@ -108,6 +88,7 @@
     © 2021 Copyright: Niek Boesveld
   </div>
 </footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="../../dist/js/bootstrap.min.js"></script>
