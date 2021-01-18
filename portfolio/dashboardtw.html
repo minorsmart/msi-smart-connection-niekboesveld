@@ -68,13 +68,13 @@
 
 .carousel-control-next-icon:after
 {
-  content: '>';
+  content: '↪';
   font-size: 50px;
   color: black;
 }
 
 .carousel-control-prev-icon:after {
-  content: '<';
+  content: '↩';
   font-size: 50px;
   color: black;
 }
@@ -86,15 +86,38 @@
   <div class="jumbotron">
     <input action="action" type="button" value="Terug" id="fixedbutton" onclick="window.history.go(-1); return false;" />
     <div class="container">
-      <h1 class="display-3">Week 1 Smart Start </h1>
-      <p> Onderzoek naar overeenkomsten tussen opleiding en minor. Voor deze opdracht heb ik onderzocht wat de overeenkomsten zijn tussen de minor Smart Industry en mijn opleiding Finance and Control.</p>
+      <h1 class="display-3">Dashboard Toegevoegde waarde</h1>
+      <p>In dit hoofdstuk behandelen wij het dashboard Toegevoegde waarde. Dit dashboard hebben wij in opdracht van Flynth accountants en adviseurs gemaakt.</p>
       <p>
     </div>
   </div>
 
   <div class="container">
-    <h1>Overeenkomsten met Finance and Control</h1><br/>
-    
+    <h1>Het dashboard</h1><br/>
+    <p>Het dashboard bestaat uit verschillende pagina’s die gebruikt kunnen worden om op de Toegevoegde waarde van Flynth te sturen. Voorheen stelde de controller van Flynth een Toegevoegde waarde rapportage op en verstuurde zij hem via pdf-documenten naar de managers binnen Flynth. Om deze rapportages op te stellen kost te veel tijd, deze tijd kan ook ergens anders benut worden. Wij hebben een dashboard gemaakt die het maken van de rapportage overbodig maakt. Ten opzichte van de oude rapportage die iedere maand werd verstuurd is ons dashboard iedere dag up to date.</p>
+    <h2>Berekening Toegevoegde Waarde</h2><br>
+    <p>Flynth berekent haar Toegevoegde Waarde door de Bedrijfsopbrengsten te verminderen met haar Personeels- en Overige kosten.</p>
+    <h2>Startpagina Toegevoegde waarde</h2><br>
+    <p>De Startpagina Toegevoegde Waarde hebben wij gemaakt om meteen een goed overzicht te hebben hoe het ervoor staat met de Toegevoegde Waarde. Op deze startpagina kan meteen een conclusie gemaakt worden of doelstelling gehaald worden.</p>
+    <p>Wij hebben verschillende tegels weergegeven met Stoplichten. Deze stoplichten geven aan of de begroting gehaald wordt of niet. Je kan vervolgens kiezen of je verder wilt inzoomen op de tegels door op de informatie Knop te klikken.
+    </p>
+    <h2>Bedrijfsopbrengsten
+    </h2><br>
+    <p>Door naar de pagina Bedrijfsopbrengsten te gaan krijg je te zien welke opbrengsten je hebt gehad in de periode die je geselecteerd hebt. Op deze pagina zie je welke doelstellingen je wel of niet hebt behaald. Een manager kan op deze pagina de indicatie krijgen op welke opbrengsten die meer moet gaan sturen.</p>
+    <p>Naast de Bedrijfsopbrengsten kan de manager ook de declarabele uren zien. De declarabele uren zijn uren die naar de klant geschreven worden. De declarabele uren maal het gemiddeld gerealiseerd tarief zijn de totale bedrijfsopbrengsten. </p>
+    <h2>Personeelskosten</h2><br>
+    <p>Op deze pagina staan alle directe kosten die Flynth maakt. Deze pagina geeft inzicht in welke kostensoort er bijvoorbeeld te veel kosten worden gemaakt. Flynth stelt doelstellingen voor hoeveel directe kosten iedere vestiging mag maken in een bepaalde periode. Het is belangrijk dat deze pagina er is want managers krijgen hier direct inzicht in hoeveel kosten ze hebben en nog mogen maken.
+    </p>
+    <h2>Overige kosten</h2><br>
+    <p>Wij hebben ook een pagina gemaakt voor de overige kosten die niet bij de Personeelskosten horen. Deze kosten zijn vaak niet veel, echter is het wel een belangrijke pagina. Hier worden de afschrijvingskosten voor de dubieuze debiteuren weergegeven. De kosten zijn voor debiteuren waarvan je verwacht dat ze niet meer gaan betalen. Deze kosten zijn vaak verschillend per maand, daarom is inzicht in deze kosten niet overbodig.</p>
+    <p>In de toekomst komen er waarschijnlijk nog meer Overige kosten die ook op deze pagina worden weergegeven. In eerste instantie hadden wij ervoor gekozen om deze kosten bij de Personeelskosten weer te geven. Door de feedback die wij hebben gekregen hebben wij ervoor gekozen om ze toch op een eigen pagina weer te geven.</p>
+    <h2>Mijn team</h2><br>
+    <p>De managers binnen Flynth hadden als wens om op medewerker niveau te kunnen sturen. Voor deze wens hebben wij een teampagina gemaakt. Op deze teampagina worden alle medewerkers binnen de vestiging weergegeven. Iedere medewerker heeft een doelstelling voor productiviteit die vooraf wordt opgesteld. De productiviteit wordt bepaald aan de hand van de geschreven uren van de medewerker. Hoe meer declarabele uren de medewerker schrijft hoe beter zijn productiviteit is.</p>
+    <p>Naast Declarabele uren worden er ook indirecte uren geschreven die niks opleveren voor Flynth. De indirecte uren willen de managers zo laag als mogelijk houden. De afwezige uren levert ook niks op voor Flynth dit kan wel een oorzaak zijn waarom de productiviteit te laag is.</p>
+    <p>Naast de tabel van productiviteit worden er ook verschillende kengetallen weergegeven waar de managers op willen sturen.
+    </p>
+    <h2>Benchmark</h2><br>
+    <p>Er was ook een wens van de managers om een pagina te maken waar ze hun eigen vestiging op kunnen vergelijken met andere vestigingen. Hiervoor hebben wij de pagina Benchmark voor gecreëerd. De belangrijkste cijfers en kengetallen kunnen ze met elkaar vergelijken. Het doel van deze pagina is dat ze kunnen vergelijken, waardoor ze in contact kunnen komen met andere vestigingen.</p>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -107,22 +130,22 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="images/startpagina.PNG" alt="First slide">
+          <img class="d-block w-100" src="images/startpagina.PNG" alt="First slide" width="600" height="600">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/bedrijfsopbrengsten.PNG" alt="Second slide">
+          <img class="d-block w-100" src="images/bedrijfsopbrengsten.PNG" alt="Second slide"width="600" height="600">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/peroneelskosten.PNG" alt="Third slide">
+          <img class="d-block w-100" src="images/peroneelskosten.PNG" alt="Third slide"width="600" height="600">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/overigekosten.PNG" alt="Third slide">
+          <img class="d-block w-100" src="images/overigekosten.PNG" alt="Third slide"width="600" height="600">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/mijnteam.PNG" alt="Third slide">
+          <img class="d-block w-100" src="images/mijnteam.PNG" alt="Third slide"width="600" height="600">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/benchmark.PNG" alt="Third slide">
+          <img class="d-block w-100" src="images/benchmark.PNG" alt="Third slide"width="600" height="600">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
